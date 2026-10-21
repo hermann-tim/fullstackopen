@@ -79,7 +79,7 @@ sequenceDiagram
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
     Note right of server: The server saves the new note
-    server-->>browser: Redirect to https://studies.cs.helsinki.fi/exampleapp/spa
+    server-->>browser: 201 Created
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
